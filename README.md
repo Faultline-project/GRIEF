@@ -10,15 +10,9 @@ selection; oracles and controlled replay separate observations from findings.
 The client supports **vLLM and SGLang**, with adapters for LoRA, speculative
 decoding, MoE, and vLLM prompt embeddings. Servers and model weights are
 installed separately.
+![GRIEF terminal walkthrough](docs/media/demo.gif)
 
-![GRIEF terminal walkthrough](https://github.com/user-attachments/assets/12a14890-077d-471f-83ff-59b7692a8cd1)
-
-
-
-
-
-
-[Watch the walkthrough](docs/media/demo.mp4) · [Quick start](docs/quickstart.md) ·
+[Watch the walkthrough]([docs/media/demo.mp4](https://github.com/user-attachments/assets/12a14890-077d-471f-83ff-59b7692a8cd1)) · [Quick start](docs/quickstart.md) ·
 [Architecture](docs/architecture.md) · [Interpreting results](docs/results.md)
 
 The walkthrough is a **simulated teaching example**: it makes no inference
