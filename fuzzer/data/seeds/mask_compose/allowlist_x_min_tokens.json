@@ -1,0 +1,14 @@
+{
+  "seed": 12102,
+  "tags": ["mask_compose", "allowed_token_ids", "stop_token_ids", "min_tokens", "tokenizer_free"],
+  "events": [
+    {"action": "send", "offset_ms": 0,  "request_id": "a1", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "allowed_token_ids": [5]},
+    {"action": "send", "offset_ms": 40, "request_id": "a2", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "allowed_token_ids": [5], "stop_token_ids": [5], "min_tokens": 32},
+    {"action": "send", "offset_ms": 80, "request_id": "a3", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "allowed_token_ids": [1, 2, 3], "stop_token_ids": [1, 2, 3], "min_tokens": 16},
+    {"action": "send", "offset_ms": 120, "request_id": "a4", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "allowed_token_ids": [1, 2, 3], "logit_bias": {"1": -100.0, "2": -100.0, "3": -100.0}}
+  ]
+}

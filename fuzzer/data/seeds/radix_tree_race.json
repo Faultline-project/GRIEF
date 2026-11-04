@@ -1,0 +1,16 @@
+{
+  "seed": 1008,
+  "tags": ["radix_tree_race"],
+  "events": [
+    {"action": "send", "offset_ms":   0, "request_id": "r01", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":   5, "request_id": "r02", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  10, "request_id": "r03", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  15, "request_id": "r04", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  20, "request_id": "r05", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  25, "request_id": "r06", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  30, "request_id": "r07", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "send", "offset_ms":  35, "request_id": "r08", "prompt_len": 640, "max_tokens": 64, "stream": true, "prefix_len": 512, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 300, "request_id": "r04", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 300, "request_id": "r07", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null}
+  ]
+}

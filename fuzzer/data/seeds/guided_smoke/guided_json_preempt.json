@@ -1,0 +1,17 @@
+{
+  "seed": 12002,
+  "tags": ["guided_smoke", "structured_output", "preemption"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "p1", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 384, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "nested", "schema": {"type": "object", "properties": {"id": {"type": "integer"}, "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["id", "items"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 10,  "request_id": "p2", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 384, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "nested", "schema": {"type": "object", "properties": {"id": {"type": "integer"}, "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["id", "items"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 20,  "request_id": "p3", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 384, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "nested", "schema": {"type": "object", "properties": {"id": {"type": "integer"}, "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["id", "items"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 30,  "request_id": "p4", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 384, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "nested", "schema": {"type": "object", "properties": {"id": {"type": "integer"}, "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["id", "items"], "additionalProperties": false}}}},
+    {"action": "cancel", "offset_ms": 60, "request_id": "p2"},
+    {"action": "send", "offset_ms": 70,  "request_id": "p5", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 384, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "nested", "schema": {"type": "object", "properties": {"id": {"type": "integer"}, "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["id", "items"], "additionalProperties": false}}}}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "seed": 12001,
+  "tags": ["guided_smoke", "structured_output"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "g1", "prompt_len": 64, "max_tokens": 96, "stream": true, "prefix_len": 32, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 40,  "request_id": "g2", "prompt_len": 64, "max_tokens": 96, "stream": true, "prefix_len": 32, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 80,  "request_id": "g3", "prompt_len": 64, "max_tokens": 96, "stream": true, "prefix_len": 32, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 120, "request_id": "g4", "prompt_len": 64, "max_tokens": 96, "stream": true, "prefix_len": 32, "temperature": 0.0,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}}
+  ]
+}

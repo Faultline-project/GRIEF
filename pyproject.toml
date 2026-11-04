@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grief-fuzzer"
+version = "0.1.0"
+description = "Greybox fuzzing of concurrent LLM serving systems"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = ["httpx[http2]>=0.27,<1", "jsonschema>=4,<5"]
+
+[project.optional-dependencies]
+tui = ["textual>=8.2,<9"]
+telemetry = ["nvidia-ml-py>=12", "msgspec>=0.18", "pyzmq>=25"]
+lora = ["torch", "transformers", "peft"]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "build>=1"]
+video = ["cairosvg>=2.7", "pillow>=10", "imageio-ffmpeg>=0.6"]
+
+[project.scripts]
+grief = "fuzzer.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Faultline-project/GRIEF"
+
+[tool.setuptools.packages.find]
+include = ["fuzzer*"]
+
+[tool.setuptools.package-data]
+fuzzer = ["data/seeds/*.json", "data/seeds/*/*.json", "data/demo/*.json", "tui/*.tcss"]

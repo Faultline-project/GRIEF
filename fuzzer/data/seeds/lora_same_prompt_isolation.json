@@ -1,0 +1,48 @@
+{
+  "seed": 2002,
+  "tags": ["lora", "isolation", "same_prompt"],
+  "events": [
+    {
+      "action": "send", "offset_ms": 0, "request_id": "r1",
+      "prompt_len": 512, "max_tokens": 64, "stream": true,
+      "prefix_len": 256, "adapter_name": "lora_a",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_0"
+    },
+    {
+      "action": "send", "offset_ms": 10, "request_id": "r2",
+      "prompt_len": 512, "max_tokens": 64, "stream": true,
+      "prefix_len": 256, "adapter_name": "lora_b",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_0"
+    },
+    {
+      "action": "send", "offset_ms": 50, "request_id": "r3",
+      "prompt_len": 512, "max_tokens": 64, "stream": true,
+      "prefix_len": 256, "adapter_name": "lora_a",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_1"
+    },
+    {
+      "action": "send", "offset_ms": 60, "request_id": "r4",
+      "prompt_len": 512, "max_tokens": 64, "stream": true,
+      "prefix_len": 256, "adapter_name": "lora_b",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_1"
+    },
+    {
+      "action": "send", "offset_ms": 120, "request_id": "r5",
+      "prompt_len": 512, "max_tokens": 64, "stream": false,
+      "prefix_len": 511, "adapter_name": "lora_a",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_2"
+    },
+    {
+      "action": "send", "offset_ms": 125, "request_id": "r6",
+      "prompt_len": 512, "max_tokens": 64, "stream": false,
+      "prefix_len": 511, "adapter_name": "lora_b",
+      "temperature": 0.0, "logprobs": 2,
+      "prompt_family_id": "iso_family_2"
+    }
+  ]
+}

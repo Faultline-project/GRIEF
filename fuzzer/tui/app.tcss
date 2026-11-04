@@ -1,0 +1,36 @@
+Screen { background: #0b1220; color: #c6d3e3; }
+#masthead { height: 3; background: #142238; padding: 0 2; align: left middle; }
+#brand { width: 10; color: #55d6be; text-style: bold; }
+#tagline { width: 1fr; color: #8cabc7; }
+#mode { width: auto; color: #ffbe6f; text-style: bold; }
+#target { height: 2; padding: 0 2; color: #8cabc7; }
+#body { height: 1fr; }
+#sidebar { width: 27; border-right: solid #20354d; padding: 0 2; }
+.eyebrow { height: 2; color: #76a2bd; text-style: bold; padding-top: 1; }
+#phase { height: 2; color: #55d6be; text-style: bold; }
+.metric { height: 4; padding-top: 1; color: #e5edf5; }
+#feedback { height: 1fr; color: #95acbf; }
+#tabs { width: 1fr; padding: 0 2; }
+TabPane { padding: 0; }
+#pipeline { height: 2; color: #55d6be; }
+#mutations { height: 2; color: #ffbe6f; }
+#trace { height: 1fr; min-height: 9; padding-top: 1; }
+#legend { height: 2; color: #718ca7; }
+#findings { height: 7; background: #101c2d; }
+DataTable > .datatable--header { background: #1a2c43; color: #b8c8db; }
+DataTable > .datatable--cursor { background: #25455b; }
+#detail { height: auto; padding: 1; color: #c6d3e3; }
+#journal_log { height: 1fr; background: #0b1220; }
+#narration { height: 3; padding: 0 2; background: #142238; color: #e2c89c; content-align: left middle; }
+Footer { background: #0b1220; }
+Screen.compact #sidebar { display: none; }
+Screen.compact #tagline { display: none; }
+Screen.compact #masthead { height: 2; }
+Screen.compact #brand { width: 1fr; }
+Screen.compact #target { height: 1; }
+Screen.compact #pipeline { display: none; }
+Screen.compact #legend { display: none; }
+Screen.compact .eyebrow { height: 1; padding-top: 0; }
+Screen.compact #mutations { height: 1; }
+Screen.compact #trace { min-height: 5; padding-top: 0; }
+Screen.compact #findings { height: 5; }

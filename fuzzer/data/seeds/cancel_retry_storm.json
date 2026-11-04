@@ -1,0 +1,21 @@
+{
+  "seed": 1007,
+  "tags": ["cancel_retry_storm"],
+  "events": [
+    {"action": "send", "offset_ms":   0, "request_id": "r01", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms":  10, "request_id": "r02", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms":  20, "request_id": "r03", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms":  30, "request_id": "r04", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms":  40, "request_id": "r05", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 200, "request_id": "r01", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 210, "request_id": "r02", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 220, "request_id": "r03", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 230, "request_id": "r04", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "cancel", "offset_ms": 240, "request_id": "r05", "prompt_len": null, "max_tokens": null, "stream": null, "prefix_len": null, "duration_ms": null},
+    {"action": "send", "offset_ms": 300, "request_id": "r01_retry", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms": 310, "request_id": "r02_retry", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms": 320, "request_id": "r03_retry", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms": 330, "request_id": "r04_retry", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null},
+    {"action": "send", "offset_ms": 340, "request_id": "r05_retry", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0, "duration_ms": null}
+  ]
+}

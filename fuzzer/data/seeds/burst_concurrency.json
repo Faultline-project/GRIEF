@@ -1,0 +1,16 @@
+{
+  "seed": 1002,
+  "tags": ["burst_concurrency"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "r01", "prompt_len": 128, "max_tokens": 64,  "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 5,   "request_id": "r02", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 10,  "request_id": "r03", "prompt_len": 64,  "max_tokens": 32,  "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 15,  "request_id": "r04", "prompt_len": 512, "max_tokens": 256, "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 20,  "request_id": "r05", "prompt_len": 128, "max_tokens": 64,  "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 25,  "request_id": "r06", "prompt_len": 256, "max_tokens": 128, "stream": false,"prefix_len": 0},
+    {"action": "send", "offset_ms": 30,  "request_id": "r07", "prompt_len": 64,  "max_tokens": 512, "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 35,  "request_id": "r08", "prompt_len": 1024,"max_tokens": 32,  "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 40,  "request_id": "r09", "prompt_len": 128, "max_tokens": 64,  "stream": true, "prefix_len": 0},
+    {"action": "send", "offset_ms": 45,  "request_id": "r10", "prompt_len": 256, "max_tokens": 128, "stream": true, "prefix_len": 0}
+  ]
+}

@@ -1,0 +1,84 @@
+{
+    "seed": 3005,
+    "tags": ["lora", "sglang", "multi_adapter", "eviction_pressure", "all_adapters"],
+    "events": [
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_a",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_b",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_b",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_c",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_c",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_d",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_d",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_e",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_e",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "mab_f",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 32,
+            "adapter_name": "lora_f",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "mab_0"
+        }
+    ]
+}

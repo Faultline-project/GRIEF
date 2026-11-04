@@ -1,0 +1,6 @@
+GRIEF
+Copyright 2026 GRIEF contributors
+
+This distribution contains the GRIEF fuzzing client, terminal interface,
+seed workloads, tests, and documentation. Inference engines and model
+weights are distributed separately under their respective licenses.

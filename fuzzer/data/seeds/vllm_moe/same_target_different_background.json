@@ -1,0 +1,36 @@
+{
+  "seed": 1200005,
+  "tags": ["moe", "isolation", "target_fixed", "varied_background"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "moe_tdb_target",
+      "prompt_len": 128,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_target"
+    },
+    {
+      "action": "send",
+      "offset_ms": 10,
+      "request_id": "moe_tdb_bg1",
+      "prompt_len": 96,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_bg1"
+    },
+    {
+      "action": "send",
+      "offset_ms": 20,
+      "request_id": "moe_tdb_bg2",
+      "prompt_len": 96,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_bg2"
+    }
+  ]
+}

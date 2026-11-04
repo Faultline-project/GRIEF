@@ -1,0 +1,11 @@
+{
+  "seed": 4001,
+  "tags": ["sglang", "spec", "short_budget", "concurrent"],
+  "events": [
+    {"action": "send", "offset_ms":  0, "request_id": "sbe_0", "prompt_len": 256, "max_tokens": 2, "stream": true, "prefix_len": 64, "temperature": 0.0, "prompt_family_id": "sbe_family"},
+    {"action": "send", "offset_ms": 10, "request_id": "sbe_1", "prompt_len": 256, "max_tokens": 1, "stream": true, "prefix_len": 64, "temperature": 0.0, "prompt_family_id": "sbe_family"},
+    {"action": "send", "offset_ms": 15, "request_id": "sbe_2", "prompt_len": 256, "max_tokens": 3, "stream": true, "prefix_len": 64, "temperature": 0.0, "prompt_family_id": "sbe_family"},
+    {"action": "send", "offset_ms": 20, "request_id": "sbe_3", "prompt_len": 384, "max_tokens": 64, "stream": true, "prefix_len": 64, "temperature": 0.0, "prompt_family_id": "sbe_family"},
+    {"action": "send", "offset_ms": 25, "request_id": "sbe_4", "prompt_len": 384, "max_tokens": 96, "stream": true, "prefix_len": 64, "temperature": 0.0, "prompt_family_id": "sbe_family"}
+  ]
+}

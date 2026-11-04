@@ -1,0 +1,14 @@
+{
+  "seed": 2002,
+  "tags": ["logprobs_burst"],
+  "events": [
+    {"action": "send", "offset_ms": 0,  "request_id": "r01", "prompt_len": 64,  "max_tokens": 16, "stream": true,  "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 10, "request_id": "r02", "prompt_len": 128, "max_tokens": 16, "stream": true,  "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 20, "request_id": "r03", "prompt_len": 256, "max_tokens": 16, "stream": true,  "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 30, "request_id": "r04", "prompt_len": 64,  "max_tokens": 16, "stream": true,  "prefix_len": 32,  "logprobs": 20},
+    {"action": "send", "offset_ms": 40, "request_id": "r05", "prompt_len": 128, "max_tokens": 16, "stream": false, "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 50, "request_id": "r06", "prompt_len": 512, "max_tokens": 16, "stream": true,  "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 60, "request_id": "r07", "prompt_len": 64,  "max_tokens": 16, "stream": true,  "prefix_len": 0,   "logprobs": 20},
+    {"action": "send", "offset_ms": 70, "request_id": "r08", "prompt_len": 256, "max_tokens": 16, "stream": true,  "prefix_len": 128, "logprobs": 20}
+  ]
+}

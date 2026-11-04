@@ -1,0 +1,54 @@
+{
+  "seed": 3001,
+  "tags": ["chat_prefix_stress"],
+  "events": [
+    {
+      "action": "send", "offset_ms": 0,  "request_id": "c01",
+      "max_tokens": 16, "stream": true,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 32}
+      ]
+    },
+    {
+      "action": "send", "offset_ms": 10, "request_id": "c02",
+      "max_tokens": 16, "stream": true,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 32}
+      ]
+    },
+    {
+      "action": "send", "offset_ms": 20, "request_id": "c03",
+      "max_tokens": 16, "stream": true,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 32}
+      ]
+    },
+    {
+      "action": "send", "offset_ms": 30, "request_id": "c04",
+      "max_tokens": 16, "stream": false,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 64}
+      ]
+    },
+    {
+      "action": "send", "offset_ms": 40, "request_id": "c05",
+      "max_tokens": 64, "stream": true,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 256}
+      ]
+    },
+    {
+      "action": "send", "offset_ms": 50, "request_id": "c06",
+      "max_tokens": 64, "stream": true,
+      "messages": [
+        {"role": "system", "content_len": 128},
+        {"role": "user",   "content_len": 512}
+      ]
+    }
+  ]
+}

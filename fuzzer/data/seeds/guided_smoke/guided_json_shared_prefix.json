@@ -1,0 +1,15 @@
+{
+  "seed": 12003,
+  "tags": ["guided_smoke", "structured_output", "prefix_cache"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "s1", "prompt_len": 256, "max_tokens": 96, "stream": true, "prefix_len": 256, "temperature": 0.0, "prompt_family_id": "guided_shared",
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 25,  "request_id": "s2", "prompt_len": 256, "max_tokens": 96, "stream": false, "prefix_len": 256, "temperature": 0.0, "prompt_family_id": "guided_shared",
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "send", "offset_ms": 50,  "request_id": "s3", "prompt_len": 256, "max_tokens": 96, "stream": true, "prefix_len": 256, "temperature": 0.0, "prompt_family_id": "guided_shared",
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}},
+    {"action": "wait", "offset_ms": 75, "duration_ms": 50},
+    {"action": "send", "offset_ms": 130, "request_id": "s4", "prompt_len": 256, "max_tokens": 96, "stream": true, "prefix_len": 256, "temperature": 0.0, "prompt_family_id": "guided_shared",
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}}
+  ]
+}

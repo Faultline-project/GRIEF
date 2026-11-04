@@ -1,0 +1,13 @@
+{
+  "seed": 2001,
+  "tags": ["prefix_stress", "lora"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "r1", "prompt_len": 600, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_a"},
+    {"action": "send", "offset_ms": 50,  "request_id": "r2", "prompt_len": 600, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_b"},
+    {"action": "send", "offset_ms": 100, "request_id": "r3", "prompt_len": 600, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_a"},
+    {"action": "send", "offset_ms": 150, "request_id": "r4", "prompt_len": 513, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_b"},
+    {"action": "cancel", "offset_ms": 225, "request_id": "r3"},
+    {"action": "send", "offset_ms": 300, "request_id": "r5", "prompt_len": 600, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_b"},
+    {"action": "send", "offset_ms": 400, "request_id": "r6", "prompt_len": 600, "max_tokens": 64, "stream": true, "prefix_len": 512, "adapter_name": "lora_a"}
+  ]
+}

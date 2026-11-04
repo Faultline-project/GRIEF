@@ -1,0 +1,25 @@
+{
+  "seed": 3001,
+  "tags": ["low_concurrency", "long_generation"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "r01",
+      "prompt_len": 256,
+      "max_tokens": 2048,
+      "stream": true,
+      "prefix_len": 0,
+      "messages": null,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "min_tokens": null,
+      "n_completions": null,
+      "logprobs": null,
+      "repetition_penalty": null,
+      "duration_ms": null,
+      "unicode_stress": null
+    }
+  ]
+}

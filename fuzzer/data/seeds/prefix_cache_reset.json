@@ -1,0 +1,50 @@
+{
+ "seed": 57727,
+ "tags": [
+  "prefix_cache",
+  "reset"
+ ],
+ "events": [
+  {
+   "action": "send",
+   "offset_ms": 0,
+   "request_id": "w1",
+   "prompt_len": 1024,
+   "max_tokens": 16,
+   "stream": false,
+   "prefix_len": 0,
+   "temperature": 0.0,
+   "prompt_family_id": "shared",
+   "include_usage": true
+  },
+  {
+   "action": "send",
+   "offset_ms": 300,
+   "request_id": "w2",
+   "prompt_len": 1024,
+   "max_tokens": 16,
+   "stream": false,
+   "prefix_len": 0,
+   "temperature": 0.0,
+   "prompt_family_id": "shared",
+   "include_usage": true
+  },
+  {
+   "action": "reset",
+   "offset_ms": 2500,
+   "request_id": "reset1"
+  },
+  {
+   "action": "send",
+   "offset_ms": 2800,
+   "request_id": "after",
+   "prompt_len": 1024,
+   "max_tokens": 16,
+   "stream": false,
+   "prefix_len": 0,
+   "temperature": 0.0,
+   "prompt_family_id": "shared",
+   "include_usage": true
+  }
+ ]
+}

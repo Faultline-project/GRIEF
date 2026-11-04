@@ -1,0 +1,12 @@
+{
+  "seed": 4003,
+  "tags": ["sglang", "spec", "cancel", "narrow_window"],
+  "events": [
+    {"action": "send",   "offset_ms":  0, "request_id": "scn_0", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "scn_family"},
+    {"action": "send",   "offset_ms":  5, "request_id": "scn_1", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "scn_family"},
+    {"action": "send",   "offset_ms": 10, "request_id": "scn_2", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "scn_family"},
+    {"action": "cancel", "offset_ms": 15, "request_id": "scn_0"},
+    {"action": "cancel", "offset_ms": 18, "request_id": "scn_1"},
+    {"action": "send",   "offset_ms": 25, "request_id": "scn_0_retry", "prompt_len": 512, "max_tokens": 128, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "scn_family"}
+  ]
+}

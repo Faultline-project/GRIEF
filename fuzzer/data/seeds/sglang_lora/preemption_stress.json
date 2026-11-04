@@ -1,0 +1,81 @@
+{
+    "seed": 3004,
+    "tags": ["lora", "sglang", "preemption", "memory_pressure", "adapter_resume"],
+    "events": [
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "long_a1",
+            "prompt_len": 512,
+            "max_tokens": 128,
+            "stream": true,
+            "prefix_len": 128,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "pre_stress_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 10,
+            "request_id": "long_b1",
+            "prompt_len": 512,
+            "max_tokens": 128,
+            "stream": true,
+            "prefix_len": 128,
+            "adapter_name": "lora_b",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "pre_stress_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 20,
+            "request_id": "short_a1",
+            "prompt_len": 32,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 0,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2
+        },
+        {
+            "action": "send",
+            "offset_ms": 25,
+            "request_id": "short_b1",
+            "prompt_len": 32,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 0,
+            "adapter_name": "lora_b",
+            "temperature": 0.0,
+            "logprobs": 2
+        },
+        {
+            "action": "send",
+            "offset_ms": 30,
+            "request_id": "long_a2",
+            "prompt_len": 768,
+            "max_tokens": 128,
+            "stream": true,
+            "prefix_len": 256,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "pre_stress_1"
+        },
+        {
+            "action": "send",
+            "offset_ms": 35,
+            "request_id": "short_a2",
+            "prompt_len": 32,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 0,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2
+        }
+    ]
+}

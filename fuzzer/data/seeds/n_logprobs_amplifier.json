@@ -1,0 +1,62 @@
+{
+ "seed": 37343,
+ "tags": [
+  "latency",
+  "n_logprobs_amplifier"
+ ],
+ "events": [
+  {
+   "action": "send",
+   "offset_ms": 0,
+   "request_id": "v1",
+   "prompt_len": 512,
+   "max_tokens": 64,
+   "stream": true,
+   "prefix_len": 32,
+   "temperature": 0.0
+  },
+  {
+   "action": "send",
+   "offset_ms": 3,
+   "request_id": "amp",
+   "prompt_len": 512,
+   "max_tokens": 16,
+   "stream": true,
+   "prefix_len": 32,
+   "temperature": 0.0,
+   "n_completions": 8,
+   "logprobs": 20
+  },
+  {
+   "action": "send",
+   "offset_ms": 6,
+   "request_id": "v2",
+   "prompt_len": 512,
+   "max_tokens": 16,
+   "stream": true,
+   "prefix_len": 32,
+   "temperature": 0.0,
+   "logprobs": 20
+  },
+  {
+   "action": "send",
+   "offset_ms": 9,
+   "request_id": "v3",
+   "prompt_len": 512,
+   "max_tokens": 16,
+   "stream": true,
+   "prefix_len": 32,
+   "temperature": 0.0
+  },
+  {
+   "action": "send",
+   "offset_ms": 12,
+   "request_id": "v4",
+   "prompt_len": 128,
+   "max_tokens": 16,
+   "stream": true,
+   "prefix_len": 32,
+   "temperature": 0.0
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "seed": 13101,
+  "tags": ["priority", "scheduler", "priority_inversion", "amplification"],
+  "events": [
+    {"action": "send", "offset_ms": 0,  "request_id": "p1", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 7, "temperature": 0.0},
+    {"action": "send", "offset_ms": 8,  "request_id": "p2", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 6, "temperature": 0.0},
+    {"action": "send", "offset_ms": 16, "request_id": "p3", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 5, "temperature": 0.0},
+    {"action": "send", "offset_ms": 24, "request_id": "p4", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 4, "temperature": 0.0},
+    {"action": "send", "offset_ms": 32, "request_id": "p5", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 3, "temperature": 0.0},
+    {"action": "send", "offset_ms": 40, "request_id": "p6", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 2, "prompt_logprobs": 2, "temperature": 0.0},
+    {"action": "send", "offset_ms": 48, "request_id": "p7", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 1, "prompt_logprobs": 2, "temperature": 0.0},
+    {"action": "send", "offset_ms": 56, "request_id": "p8", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 0, "prompt_logprobs": 5, "n_completions": 4, "temperature": 0.7, "seed": 20260826},
+
+    {"action": "send", "offset_ms": 400, "request_id": "q1", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 0, "temperature": 0.0},
+    {"action": "send", "offset_ms": 404, "request_id": "q2", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 0, "temperature": 0.0},
+    {"action": "send", "offset_ms": 408, "request_id": "q3", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 0,   "priority": 0, "temperature": 0.0},
+    {"action": "send", "offset_ms": 412, "request_id": "q4", "prompt_len": 512, "max_tokens": 64, "stream": false, "prefix_len": 256, "priority": 0, "temperature": 0.0}
+  ]
+}

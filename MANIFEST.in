@@ -1,0 +1,6 @@
+include LICENSE NOTICE README.md
+recursive-include fuzzer/data *.json
+recursive-include fuzzer/tui *.tcss
+recursive-include scripts *.py
+recursive-include tests *.py *.txt
+recursive-include docs *.md

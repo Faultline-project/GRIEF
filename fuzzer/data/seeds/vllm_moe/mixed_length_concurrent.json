@@ -1,0 +1,46 @@
+{
+  "seed": 1200004,
+  "tags": ["moe", "concurrent", "mixed_length", "isolation"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "moe_ml_target",
+      "prompt_len": 128,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_target"
+    },
+    {
+      "action": "send",
+      "offset_ms": 10,
+      "request_id": "moe_ml_bg1",
+      "prompt_len": 64,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_bg_short"
+    },
+    {
+      "action": "send",
+      "offset_ms": 20,
+      "request_id": "moe_ml_bg2",
+      "prompt_len": 256,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_bg_medium"
+    },
+    {
+      "action": "send",
+      "offset_ms": 30,
+      "request_id": "moe_ml_bg3",
+      "prompt_len": 512,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_bg_long"
+    }
+  ]
+}

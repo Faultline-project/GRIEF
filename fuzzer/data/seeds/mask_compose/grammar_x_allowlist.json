@@ -1,0 +1,19 @@
+{
+  "seed": 12103,
+  "tags": ["mask_compose", "structured_output", "allowed_token_ids", "bad_words"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "x1", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}},
+     "allowed_token_ids": [1, 2, 3, 4]},
+    {"action": "send", "offset_ms": 40,  "request_id": "x2", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}},
+     "bad_words": ["{", "\"", "}"]},
+    {"action": "send", "offset_ms": 80,  "request_id": "x3", "prompt_len": 64, "max_tokens": 128, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}},
+     "allowed_token_ids": [1, 2, 3, 4], "min_tokens": 64},
+    {"action": "send", "offset_ms": 120, "request_id": "x4", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "guided_choice": ["yes", "no"], "bad_words": ["yes", "no"]},
+    {"action": "send", "offset_ms": 160, "request_id": "x5", "prompt_len": 64, "max_tokens": 96, "stream": false, "prefix_len": 32, "temperature": 0.0, "logprobs": 5,
+     "response_format": {"type": "json_schema", "json_schema": {"name": "flat", "schema": {"type": "object", "properties": {"name": {"type": "string"}, "count": {"type": "integer"}}, "required": ["name", "count"], "additionalProperties": false}}}}
+  ]
+}

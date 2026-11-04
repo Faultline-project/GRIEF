@@ -1,0 +1,16 @@
+{
+  "seed": 1001,
+  "tags": ["cancel_storm"],
+  "events": [
+    {"action": "send", "offset_ms": 0,    "request_id": "r1", "prompt_len": 512, "max_tokens": 256, "stream": true,  "prefix_len": 0},
+    {"action": "send", "offset_ms": 50,   "request_id": "r2", "prompt_len": 512, "max_tokens": 256, "stream": true,  "prefix_len": 0},
+    {"action": "send", "offset_ms": 100,  "request_id": "r3", "prompt_len": 512, "max_tokens": 256, "stream": true,  "prefix_len": 0},
+    {"action": "cancel", "offset_ms": 200,  "request_id": "r1"},
+    {"action": "cancel", "offset_ms": 210,  "request_id": "r2"},
+    {"action": "cancel", "offset_ms": 220,  "request_id": "r3"},
+    {"action": "send", "offset_ms": 500,  "request_id": "r4", "prompt_len": 512, "max_tokens": 256, "stream": true,  "prefix_len": 0},
+    {"action": "send", "offset_ms": 550,  "request_id": "r5", "prompt_len": 512, "max_tokens": 256, "stream": true,  "prefix_len": 0},
+    {"action": "cancel", "offset_ms": 700,  "request_id": "r4"},
+    {"action": "cancel", "offset_ms": 710,  "request_id": "r5"}
+  ]
+}

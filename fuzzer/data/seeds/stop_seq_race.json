@@ -1,0 +1,14 @@
+{
+  "seed": 1016,
+  "tags": ["stop_seq_race"],
+  "events": [
+    {"action": "send", "offset_ms": 0,   "request_id": "r01", "prompt_len": 256, "max_tokens": 64, "stream": true,  "prefix_len": 128, "stop": ["The", "I "]},
+    {"action": "send", "offset_ms": 10,  "request_id": "r02", "prompt_len": 256, "max_tokens": 64, "stream": true,  "prefix_len": 128, "stop": ["The", "I "]},
+    {"action": "send", "offset_ms": 20,  "request_id": "r03", "prompt_len": 256, "max_tokens": 64, "stream": false, "prefix_len": 128, "stop": ["Note", "Here"], "logprobs": 3},
+    {"action": "send", "offset_ms": 30,  "request_id": "r04", "prompt_len": 256, "max_tokens": 64, "stream": false, "prefix_len": 128, "stop": ["Note", "Here"], "logprobs": 3},
+    {"action": "send", "offset_ms": 40,  "request_id": "r05", "prompt_len": 512, "max_tokens": 32, "stream": true,  "prefix_len": 128, "stop": ["\n\n"]},
+    {"action": "send", "offset_ms": 50,  "request_id": "r06", "prompt_len": 512, "max_tokens": 32, "stream": true,  "prefix_len": 128, "stop": ["\n\n"]},
+    {"action": "cancel", "offset_ms": 200, "request_id": "r05"},
+    {"action": "send", "offset_ms": 250, "request_id": "r07", "prompt_len": 256, "max_tokens": 64, "stream": true,  "prefix_len": 128, "stop": ["The", "I "]}
+  ]
+}

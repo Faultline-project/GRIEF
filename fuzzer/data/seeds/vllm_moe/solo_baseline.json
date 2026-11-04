@@ -1,0 +1,16 @@
+{
+  "seed": 1200001,
+  "tags": ["moe", "baseline", "solo"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "moe_solo_1",
+      "prompt_len": 128,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_base"
+    }
+  ]
+}

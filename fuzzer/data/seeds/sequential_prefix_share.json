@@ -1,0 +1,44 @@
+{
+  "seed": 3002,
+  "tags": ["low_concurrency", "prefix_sharing", "sequential"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "r01",
+      "prompt_len": 512,
+      "max_tokens": 64,
+      "stream": true,
+      "prefix_len": 512,
+      "messages": null,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "min_tokens": null,
+      "n_completions": null,
+      "logprobs": null,
+      "repetition_penalty": null,
+      "duration_ms": null,
+      "unicode_stress": null
+    },
+    {
+      "action": "send",
+      "offset_ms": 4000,
+      "request_id": "r02",
+      "prompt_len": 512,
+      "max_tokens": 64,
+      "stream": true,
+      "prefix_len": 512,
+      "messages": null,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "min_tokens": null,
+      "n_completions": null,
+      "logprobs": null,
+      "repetition_penalty": null,
+      "duration_ms": null,
+      "unicode_stress": null
+    }
+  ]
+}

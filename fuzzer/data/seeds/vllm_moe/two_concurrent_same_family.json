@@ -1,0 +1,26 @@
+{
+  "seed": 1200002,
+  "tags": ["moe", "concurrent", "same_family", "batch2"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "moe_b2_a",
+      "prompt_len": 128,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_batch2"
+    },
+    {
+      "action": "send",
+      "offset_ms": 10,
+      "request_id": "moe_b2_b",
+      "prompt_len": 128,
+      "max_tokens": 64,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_family_id": "moe_batch2"
+    }
+  ]
+}

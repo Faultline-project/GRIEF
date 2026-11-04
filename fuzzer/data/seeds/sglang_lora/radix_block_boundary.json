@@ -1,0 +1,69 @@
+{
+    "seed": 3001,
+    "tags": ["lora", "sglang", "radix_block_boundary", "isolation"],
+    "events": [
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "r1",
+            "prompt_len": 128,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "block64_pair_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 15,
+            "request_id": "r2",
+            "prompt_len": 128,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_b",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "block64_pair_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 40,
+            "request_id": "r3",
+            "prompt_len": 64,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 0,
+            "adapter_name": "lora_a",
+            "temperature": 0.0
+        },
+        {
+            "action": "send",
+            "offset_ms": 100,
+            "request_id": "r4",
+            "prompt_len": 192,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "block64_pair_1"
+        },
+        {
+            "action": "send",
+            "offset_ms": 110,
+            "request_id": "r5",
+            "prompt_len": 192,
+            "max_tokens": 32,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_b",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "block64_pair_1"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+# For development from a checkout. The inference server is installed separately.
+-e .[tui,telemetry,dev]

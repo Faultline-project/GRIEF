@@ -1,0 +1,110 @@
+{
+    "seed": 3003,
+    "tags": ["lora", "sglang", "same_adapter", "high_concurrency", "batch_assignment"],
+    "events": [
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "r1",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 0,
+            "request_id": "r2",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 5,
+            "request_id": "r3",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 5,
+            "request_id": "r4",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 10,
+            "request_id": "r5",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 10,
+            "request_id": "r6",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 15,
+            "request_id": "r7",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        },
+        {
+            "action": "send",
+            "offset_ms": 15,
+            "request_id": "r8",
+            "prompt_len": 128,
+            "max_tokens": 64,
+            "stream": true,
+            "prefix_len": 64,
+            "adapter_name": "lora_a",
+            "temperature": 0.0,
+            "logprobs": 2,
+            "prompt_family_id": "sahc_0"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 4002,
+  "tags": ["sglang", "spec", "mixed_chunk", "chunked_prefill"],
+  "events": [
+    {"action": "send", "offset_ms":   0, "request_id": "mcr_dec_0", "prompt_len": 512, "max_tokens": 64, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "mcr_decode"},
+    {"action": "send", "offset_ms":  15, "request_id": "mcr_dec_1", "prompt_len": 512, "max_tokens": 64, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "mcr_decode"},
+    {"action": "send", "offset_ms":  30, "request_id": "mcr_dec_2", "prompt_len": 512, "max_tokens": 64, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "mcr_decode"},
+    {"action": "send", "offset_ms":  45, "request_id": "mcr_dec_3", "prompt_len": 384, "max_tokens": 64, "stream": true, "prefix_len": 128, "temperature": 0.0, "prompt_family_id": "mcr_decode"},
+    {"action": "send", "offset_ms": 200, "request_id": "mcr_prefill", "prompt_len": 4096, "max_tokens": 32, "stream": true, "prefix_len": 0, "temperature": 0.0, "prompt_family_id": "mcr_large"}
+  ]
+}

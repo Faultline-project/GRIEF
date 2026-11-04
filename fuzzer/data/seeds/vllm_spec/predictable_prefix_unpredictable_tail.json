@@ -1,0 +1,17 @@
+{
+  "seed": 1100005,
+  "tags": ["spec", "rejection_heavy", "high_draft_rejection"],
+  "events": [
+    {
+      "action": "send",
+      "offset_ms": 0,
+      "request_id": "spec_rh1",
+      "prompt_len": 512,
+      "prefix_len": 0,
+      "max_tokens": 256,
+      "stream": true,
+      "temperature": 0.0,
+      "prompt_style": "rejection_heavy"
+    }
+  ]
+}
