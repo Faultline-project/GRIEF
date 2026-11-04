@@ -11,8 +11,11 @@ The client supports **vLLM and SGLang**, with adapters for LoRA, speculative
 decoding, MoE, and vLLM prompt embeddings. Servers and model weights are
 installed separately.
 
-![GRIEF terminal walkthrough](docs/media/demo.gif)
-<img width="1254" height="1254" alt="Ghost mascot with transparent background" src="https://github.com/user-attachments/assets/563d7c6c-07a2-4196-b94a-e5e98852d887" />
+![GRIEF terminal walkthrough](https://github.com/user-attachments/assets/12a14890-077d-471f-83ff-59b7692a8cd1)
+
+
+
+
 
 
 [Watch the walkthrough](docs/media/demo.mp4) · [Quick start](docs/quickstart.md) ·
