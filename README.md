@@ -1,3 +1,6 @@
+
+<img width="280" height="280" alt="grief-ghost-editable 2" src="https://github.com/user-attachments/assets/a0552d93-2717-4f8c-8ad6-fdec71b2c8e2" />
+
 # GRIEF
 
 **Greybox fuzzing of concurrent LLM serving systems.**
